@@ -81,7 +81,7 @@ lyfoes(Tubos,R):- troca_tubo(Tubos,R1,[0,0]),
 lyfoes(Tubos,R):- inverter_tubos(Tubos,R2), troca_tubo(R2,R3,[0,0]), inverter_tubos(R3,R4),
    lyfoes(R4,R).
 
+
+%Testes:
 %lynfoes([[[1,1],[2,2],[1,3],[3,4]],[[2,5],[2,6],[3,7],[3,8]],[[1,9],[1,10],[3,11],[2,12]],[],[]],R).
 %troca_tubo([[],[[3,11],[3,4],[3,7],[3,8]],[[2,12]],[[1,10],[1,9],[1,3],[1,1]],[[2.6],[2,5],[2,2]]],R,[0,0]).
-% Falta verificar quando existem dois tubos iguais, e concatenar os
-% dois.
